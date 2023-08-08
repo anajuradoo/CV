@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios Matemáticos</title>
+  <!-- Agrega los estilos de Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Agrega estilos personalizados -->
+  <style>
+    body {
+      background-color: green;
+      color: white;
+    }
+    .container {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Ejercicios Matemáticos</h1>
+    
+    <div class="form-group">
+      <label for="numero1">Número 1:</label>
+      <input type="number" class="form-control" id="numero1">
+    </div>
+
+    <div class="form-group">
+      <label for="numero2">Número 2:</label>
+      <input type="number" class="form-control" id="numero2">
+    </div>
+
+    <button class="btn btn-primary" onclick="sumar()">Sumar</button>
+    <button class="btn btn-primary" onclick="restar()">Restar</button>
+    <button class="btn btn-primary" onclick="raizCuadrada()">Raíz Cuadrada</button>
+
+    <div class="mt-4">
+      <h3>Resultado:</h3>
+      <p id="resultado"></p>
+    </div>
+  </div>
+
+  <!-- Agrega los scripts de Bootstrap y JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function sumar() {
+      var num1 = parseFloat(document.getElementById("numero1").value);
+      var num2 = parseFloat(document.getElementById("numero2").value);
+      var resultado = num1 + num2;
+      document.getElementById("resultado").innerHTML = "Resultado: " + resultado;
+    }
+
+    function restar() {
+      var num1 = parseFloat(document.getElementById("numero1").value);
+      var num2 = parseFloat(document.getElementById("numero2").value);
+      var resultado = num1 - num2;
+      document.getElementById("resultado").innerHTML = "Resultado: " + resultado;
+    }
+
+    function raizCuadrada() {
+      var num1 = parseFloat(document.getElementById("numero1").value);
+      var resultado = Math.sqrt(num1);
+      document.getElementById("resultado").innerHTML = "Resultado: " + resultado;
+    }
+  </script>
+</body>
+</html>
+<a href="corridos.html"> PAGINA 1 CLICK AQUI</a>
+<a href="index.html">PAGINA 2 CLICK AQUI</a>
